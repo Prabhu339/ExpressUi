@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.app{
+    display: flex;
+    height: 150px;
+    width: 90%;
+   
+}
+ h3{
+margin-left: 30px;
+}
+.clear{
+clear: both;
+display: table;
+}
+.center{
+    text-align: center;
+}
+
+.size{
+    display: flex;
+    float: left;
+    display: table;
+    padding: 20px;
+}
+.feature{
+    width: 100%;
+    height: 250px;
+    clear: both;
+    display: table;
+    
+   
+
+
+}
+.features{
+    width: 20%;
+    float: left;
+    height: 100%;
+    padding: 20px;
+}
+.feature img{
+    height: 150px;
+    width: 150px;
+}
+.bgc{
+    background-color: hsl(16, 100%, 50%);
+    color: white;
+}
+.flex{
+display: table;
+clear: both;
+}
+.flexy{
+    float: left;
+}
+.display{
+    display: flex;
+    overflow-x:scroll;
+    height: auto;
+    position: relative;
+   
+
+}
+.inline{
+    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.inbtn{
+    margin-left: 200px;
+}
+.dia{
+    flex: 0 0 auto;
+    height: 250px;
+    width: 350;
+    margin: 20px;
+    padding: auto;
+}
+.dia img{
+    object-fit: cover;
+    width: 350px;
+    height: 220px;
+}
+.ant{
+height: 200px;
+width: 350px;
+}
+
