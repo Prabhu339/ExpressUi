@@ -46,13 +46,11 @@ const Head = () => {
                             <NavLink className="nav-link" to="/contact"><b>Contact</b></NavLink>
                         </li>
                         <li className="nav-item me-2">
-                            <NavLink className="nav-link" to="/adminpanel"><b>Login </b></NavLink>
+                            <NavLink className="nav-link" to="/login"><b>Login </b></NavLink>
                         </li>
                         
                        
-                        <li className="nav-item me-2">
-                            <NavLink className="nav-link" to="/signup"><b>SignUp</b></NavLink>
-                        </li>
+                        
                         <li className="nav-item me-2">
                             <NavLink className="nav-link mt" to="/cart"><b className='mt'>CART<span className='text-danger big'>{count}</span></b></NavLink>
                             

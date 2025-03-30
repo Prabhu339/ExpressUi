@@ -45,14 +45,14 @@ const Routing = () => {
          <Route path='/' element={<LandingPage/>}/>
     <Route path='/dashboard' element={<DashboardAuth/>}/>
     <Route path='/sheader' element={<Sheader/>}/>
-    <Route path='/login' element={<Login/>}/>
+    {/*<Route path='/login' element={<Login/>}/>*/}
    <Route path='/signup' element={<Signup/>}/>
    <Route path='/help' element={<Help/>}/>
    <Route path='/onboarding' element={<Onboarding/>}/>
    <Route path='/addhotel' element={<AddHotel/>}/>
    <Route path='/viewhotel' element={<ViewHotel/>}/>
    <Route path='/restaurant' element={<Restaurant/>}/>
-   <Route path='/adminpanel' element={<Verify/>}/>
+   <Route path='/login' element={<Verify/>}/>
    <Route path='/menu' element={<Menu/>}/>
    <Route path='/addmenu' element={<Addmenu/>}/>
    <Route path="/offer" element={<ViewOffer/>} />

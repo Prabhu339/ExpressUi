@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useContext, useState } from 'react'
-
+import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { loginCheck } from '../../App'
 
@@ -39,6 +39,8 @@ const Verify = () => {
 
 <input type='submit' value='login'  className='mb-3 form-control bg-primary'/>
         </form>
+       
+        <NavLink to='/signup'> <button  className='btn btn-danger'>Don't Have An Account</button></NavLink>
     </div>
     </div>
   )

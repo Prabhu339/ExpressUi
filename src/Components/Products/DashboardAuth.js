@@ -62,7 +62,7 @@ const [view,setView]=useState();
 
   const navigate=useNavigate();
   if(!token){
-    navigate('/adminpanel')
+    navigate('/login')
   } 
   return (
     <div>
