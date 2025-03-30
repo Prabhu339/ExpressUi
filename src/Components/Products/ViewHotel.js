@@ -8,7 +8,7 @@ const ViewHotel = () => {
     const [show,setShow]=useState([]);
     const [scrollPosition,setScrollPosition]=useState(0);
     useEffect(()=>{
-        axios.get(`http://localhost:4000/addhotel`)
+        axios.get(`https://backend-express-deploy-7cx7.onrender.com/addhotel`)
         .then((res)=>setShow(res.data))
         .catch((err)=>console.log(err))
     })

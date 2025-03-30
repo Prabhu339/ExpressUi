@@ -7,7 +7,7 @@ const AddHotel = () => {
   const [image,setImage]=useState("");
   const add=(e)=>{
     e.preventDefault();
-    axios.post(`http://localhost:4000/addhotel`,{Name,distance,image})
+    axios.post(`https://backend-express-deploy-7cx7.onrender.com/addhotel`,{Name,distance,image})
     .then((res)=>alert("added"))
     .catch((err)=>console.log(err))
   }

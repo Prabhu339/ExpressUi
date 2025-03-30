@@ -8,7 +8,7 @@ const AddProduct = () => {
     const [image,setImage]=useState("");
     const add=(e)=>{
         e.preventDefault();
-        axios.post(`http://localhost:4000/items`,{
+        axios.post(`https://backend-express-deploy-7cx7.onrender.com/items`,{
             addProduct,addPrice,description,image})
             .then((res)=>{
                 console.log("added");

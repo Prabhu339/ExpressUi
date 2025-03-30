@@ -13,19 +13,19 @@ const OfferDelete = () => {
     const [_id,setid]=useState("");
      useEffect (()=>{
         
-    axios.get(`http://localhost:4000/offer`)
+    axios.get(`https://backend-express-deploy-7cx7.onrender.com/offer`)
     .then((res)=>setdata(res.data))
     .catch((err)=>console.log(err));
 
 })
 const deletedata=(_id)=>{
-    axios.delete(`http://localhost:4000/offer/${_id}`)
+    axios.delete(`https://backend-express-deploy-7cx7.onrender.com/offer/${_id}`)
     .then((res)=>alert("data Deleted"))
     .catch((err)=>console.log(err));
 }
 
 const getonedata=(_id)=>{
-    axios.get(`http://localhost:4000/offer/${_id}`)
+    axios.get(`https://backend-express-deploy-7cx7.onrender.com/offer/${_id}`)
     .then((res)=>{
         setImg(res.data.img);
         setImg1(res.data.img1);
@@ -42,7 +42,7 @@ const getonedata=(_id)=>{
 
  const updatedata=(e)=>{
     e.preventDefault();
-    axios.put(`http://localhost:4000/offer/${_id}`,{img,img1,img2,region,city,discount,offer})
+    axios.put(`https://backend-express-deploy-7cx7.onrender.com/offer/${_id}`,{img,img1,img2,region,city,discount,offer})
     .then((res)=>alert("data updated"))
     .catch((err)=>alert(err))
 }

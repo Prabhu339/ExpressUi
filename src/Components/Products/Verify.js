@@ -11,7 +11,7 @@ const Verify = () => {
     const navigate=useNavigate()
     const submit=(e)=>{
         e.preventDefault()
-        axios.post(`http://localhost:4000/login`,{email,password})
+        axios.post(`https://backend-express-deploy-7cx7.onrender.com/login`,{email,password})
         .then((res)=>{
             console.log(res.data);
             if(res.data.token){

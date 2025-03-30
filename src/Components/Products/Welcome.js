@@ -4,10 +4,10 @@ import useCallApi from "./CallApi.js"
  
 
 const Welcome = () => {
-const courses = useCallApi("http://localhost:4000/courses")
-const enquiries = useCallApi("http://localhost:4000/enquiries")
-const batches = useCallApi("http://localhost:4000/batches")
-const addbus = useCallApi("http://localhost:4000/addbus")
+const courses = useCallApi("https://backend-express-deploy-7cx7.onrender.com/courses")
+const enquiries = useCallApi("https://backend-express-deploy-7cx7.onrender.com/enquiries")
+const batches = useCallApi("https://backend-express-deploy-7cx7.onrender.com/batches")
+const addbus = useCallApi("https://backend-express-deploy-7cx7.onrender.com/addbus")
 
 
 

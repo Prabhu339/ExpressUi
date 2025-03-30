@@ -9,7 +9,7 @@ const Buy = () => {
   const [men,setmen]=useState("")
   const {_id}=useParams();
   useEffect(()=>{
-    axios.get(`http://localhost:4000/menu/${_id}`)
+    axios.get(`https://backend-express-deploy-7cx7.onrender.com/menu/${_id}`)
     .then((res)=>setmen(res.data))
     .catch((err)=>console.log(err))
   

@@ -11,7 +11,7 @@ const Contact = () => {
 
 const sub=(e)=>{
   e.preventDefault();
-  axios.post(`http://localhost:4000/enquiries`,{
+  axios.post(`https://backend-express-deploy-7cx7.onrender.com/enquiries`,{
     name,email,phone,message,subject
   })
   .then((res)=>alert("posted"))

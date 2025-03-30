@@ -7,7 +7,7 @@ const ViewOffer = () => {
     const [give,setgive]=useState([]);
     useEffect(()=>{
     
-    axios.get(`http://localhost:4000/offer`)
+    axios.get(`https://backend-express-deploy-7cx7.onrender.com/offer`)
     .then((res)=>setgive(res.data))
     .catch((err)=>console.log(err))
     })

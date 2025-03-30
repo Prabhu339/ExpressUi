@@ -13,7 +13,7 @@ const Restaurant = () => {
     })
     const [bus,setbus]=useState([]);
     useEffect(()=>{
-        axios.get(`http://localhost:4000/addhotel`)
+        axios.get(`https://backend-express-deploy-7cx7.onrender.com/addhotel`)
         .then((res)=>setbus(res.data))
         .catch((err)=>console.log(err))
     })

@@ -8,7 +8,7 @@ const Addmenu = () => {
     const [details,setdetails]=useState("");
     const menu=((e)=>{
         e.preventDefault();
-        axios.post(`http://localhost:4000/menu`,{
+        axios.post(`https://backend-express-deploy-7cx7.onrender.com/menu`,{
            details,itemname,image,price
         })
         .then((res)=>alert("added"))

@@ -8,7 +8,7 @@ const Signup = () => {
   const [cpassword,setCpassword]=useState("");
   const post=((e)=>{
     e.preventDefault();
-    axios.post(`http://localhost:4000/signup`,
+    axios.post(`https://backend-express-deploy-7cx7.onrender.com/signup`,
      {name,email,password,cpassword})
      .then((res)=>console.log(res),alert("signup successful"))
      .catch((err)=>console.log(err))

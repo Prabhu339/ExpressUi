@@ -11,7 +11,7 @@ const Login = () => {
   const navigate=useNavigate();
   const send=(e)=>{
  e.preventDefault();
-axios.post(`http://localhost:4000/vendor/login`,{email,password})
+axios.post(`https://backend-express-deploy-7cx7.onrender.com/vendor/login`,{email,password})
 .then((res)=>{
   console.log(res.data)
   if(res.data.token){

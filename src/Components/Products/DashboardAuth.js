@@ -51,7 +51,7 @@ const [view,setView]=useState();
 
 
   useEffect(()=>{
-    axios.get(`http://localhost:4000/dashboard`,{
+    axios.get(`https://backend-express-deploy-7cx7.onrender.com/dashboard`,{
       headers:{"x-token":token}}
     )
     .then((res)=>{

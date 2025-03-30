@@ -21,7 +21,7 @@ const Menu = () => {
 
  
     useEffect(()=>{
-        axios.get(`http://localhost:4000/menu`)
+        axios.get(`https://backend-express-deploy-7cx7.onrender.com/menu`)
         .then((res)=>setMenu(res.data))
         .catch((err)=>console.log(err))
       

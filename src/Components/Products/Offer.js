@@ -11,7 +11,7 @@ const Offer = () => {
  const [discount,setdiscount]=useState("");
  const attach=(e)=>{
   e.preventDefault();
-  axios.post(`http://localhost:4000/offer`,{img,region,city,offer,discount})
+  axios.post(`https://backend-express-deploy-7cx7.onrender.com/offer`,{img,region,city,offer,discount})
   .then((res)=>{
     alert("added")
     console.log(res.data);

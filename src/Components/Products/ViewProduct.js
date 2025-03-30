@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 const ViewProduct = () => {
     const [showProduct,setShowProduct]=useState([]);
     useEffect(()=>{
-        axios.get(`http://localhost:4000/items
+        axios.get(`https://backend-express-deploy-7cx7.onrender.com/items
 `)
 .then((res)=>setShowProduct(res.data))
 .catch((err)=>console.log(err)

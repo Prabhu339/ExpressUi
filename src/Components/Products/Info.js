@@ -9,7 +9,7 @@ const Info = () => {
     const [img,setImg]=useState("");
     const [_id,setid]=useState("");
     useEffect(()=>{
-        axios.get(`http://localhost:4000/offer`)
+        axios.get(`https://backend-express-deploy-7cx7.onrender.com/offer`)
         .then((res)=>setApp(res.data))
         .catch((err)=>console.log(err))
         

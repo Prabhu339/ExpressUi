@@ -7,12 +7,12 @@ import React, { useEffect, useState } from 'react'
 const ViewEnquiry = () => {
     const [can,setcan]=useState([])
     useEffect(()=>{
-        axios.get("http://localhost:4000/enquiries")
+        axios.get("https://backend-express-deploy-7cx7.onrender.com/enquiries")
         .then((res)=>setcan(res.data))
         .catch((err)=>console.log(err))
     })
     const deletedata=(_id)=>{
-        axios.delete(`http://localhost:4000/enquiries/${_id}`)
+        axios.delete(`https://backend-express-deploy-7cx7.onrender.com/enquiries/${_id}`)
         .then((res)=>alert("data Deleted"))
         .catch((err)=>console.log(err));
     }
