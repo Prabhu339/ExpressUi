@@ -86,24 +86,24 @@ const Location = () => {
       
   return (
     <div>
-        <div className='container p-5'>
-          <h2 className=''>Cities with food delivery</h2>
-            <div >
+       
+          <h2 className='text-danger bg-dark'><marquee>Cities with food delivery</marquee></h2>
+            <div className='row container-fluid text-center'>
                 {loco.map((dt,index)=>{
                     return(
-                        <div className='row flexy text-center'>
-                          <div className=''>
-                          <div  className='card flex p-2 m-2 text-center'key={index}>
-                          <p>order food online in</p>
-                            <h5>{dt.city}</h5>
+                      
+                         
+                          <div  className='col-md-4 col-sm-4 border mb-1 mt-1  col-sm-4 col-lg-2 col-xl-2 col-xxl-2 'key={index}>
+                         order food  in<br></br>
+                            <b>{dt.city}</b>
                         </div>
 
-                          </div>
-                        </div>
+                         
+                       
                     )
                 })}
             </div>
-        </div>
+        
     </div>
   )
 }

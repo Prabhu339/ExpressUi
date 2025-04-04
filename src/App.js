@@ -34,7 +34,7 @@ function App() {
    const [cart,setcart]=useState([]);
   const [login,setLogin]=useState(false);
   return (
-    <div className='App container-fluid'>
+    <div className='App'>
     
      <loginCheck.Provider value={[token,setToken]}>
      <loginstatus.Provider value={[login,setLogin]}>

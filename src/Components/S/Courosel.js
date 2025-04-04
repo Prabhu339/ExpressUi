@@ -1,15 +1,15 @@
 import React from 'react'
-import food from '../S/Sassets/869102Q0A4644_4.jpg'
-import food1 from '../S/Sassets/sweet.avif'
-import food2 from '../S/Sassets/foody1.avif'
-import food3 from '../S/Sassets/nonveg.avif'
+import fooda from '../S/Sassets/869102Q0A4644_4.jpg'
+import food1 from '../S/Sassets/cor1.avif'
+import food2 from '../S/Sassets/cor2.jpg'
+import food from '../S/Sassets/cor3.jpg'
 
 
 
 
 const Courosel = () => {
   return (
-    <div className='container p-5'>
+    <div className='container-fluid bg-dark'>
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li

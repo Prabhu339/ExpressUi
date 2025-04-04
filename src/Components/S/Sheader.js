@@ -1,9 +1,10 @@
 import React from 'react'
 import veg from "../S/Sassets/Veggies_new (1).avif"
 import fruit from "../S/Sassets/fruit.avif"
-import card1 from "../S/Sassets/card1.avif";
-import card2 from "../S/Sassets/card2.avif"
+import card1 from "../S/Sassets/arrow.jpg";
+import card2 from "../S/Sassets/card22.avif"
 import { useNavigate } from 'react-router-dom';
+
 
 const Sheader = () => {
   const navigate=useNavigate();
@@ -12,7 +13,7 @@ const Sheader = () => {
   }
   return (
     <div>
-        <div className='row bgc'>
+        <div className='row bg'>
        <div className='col-3'>
         <img src={veg} className='w-100'/>
        </div>

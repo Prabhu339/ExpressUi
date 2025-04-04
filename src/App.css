@@ -248,3 +248,7 @@ color: black;
 .ruffview b p{
 margin-top: -5px;
 }
+.dataflex{
+  display: flex;
+  
+}

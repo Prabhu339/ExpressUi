@@ -9,21 +9,21 @@ import appstore from  "./S/Sassets/appstore.avif"
 
 const Footer = () => {
   return (
-    <div className='container-fluid'>
+    <div className=''>
         <div className='end clear'>
 <h4 className='text-center bold'>"Life is uncertain. Eat dessert first." 
 </h4>
         </div>
         <section className='foott'>
             <div className="row ">
-                <div className="col-sm-12 col-md-6 col-lg-4 ">
+                <div className="col-md-3 ">
                     <h3>Contact</h3>
-                    <p className=''>Address: kakinada, Bhanugudi junction,  Andhra pradesh,
+                    <p className='ms-3'>Address: kakinada, Bhanugudi junction,  Andhra pradesh,
                         pin:533001 india</p>
-                        <p>cell:7337266170</p>
-                        <p>express123@gmail.com</p>
+                        <p className='ms-4'>cell:7337266170<br></br>
+                         express123@gmail.com</p>
                 </div>
-                <div className='col-sm-12 col-md-6 col-lg-4'>
+                <div className='col-md-3'>
                     <h3>Quick Links</h3>
                     <ul>
                         
@@ -38,7 +38,7 @@ const Footer = () => {
                        
                     </ul>
                 </div>
-                <div className='col-sm-12 col-md-6 col-lg-4'>
+                <div className='col-md-3'>
                     <h3>Follow us on</h3>
 <img src={youtube} className='img'/>
 <img src={facebook}  className='img'/>
