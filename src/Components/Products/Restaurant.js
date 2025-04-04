@@ -4,6 +4,9 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import Start from './Start';
 import City from './City';
 import Footer from '../Footer';
+import { Carousel } from 'bootstrap';
+import { CardImage } from 'react-bootstrap-icons';
+import ViewHotel from './ViewHotel';
 //import Orders from './Orders';
 
 const Restaurant = () => {
@@ -19,41 +22,29 @@ const Restaurant = () => {
     })
   return (
   <>
-  <Start/>
-  <div className='container p-5'>
+  
+  <ViewHotel/>
+  <div className='container'>
         <h1>View Restaurants</h1>
-        <div className='row'>
-               {bus.map((bus)=>{ return(
-
-                    <div className='container col-md-4 '>
-                      
-                       
-                <div className="">
-                
-                    <div className=" p-3">
-                    <div className='ant'>
-                    <img className="anty shadow" src={bus.image} alt="Title" onClick={item}/>
-                   
-                    </div>
-                    
-                        <b className="text-dark card-text">{bus.Name}</b>
-                        <p className="card-text"><b>RS.{bus.distance}</b></p> 
-                    </div>  
-                
-                
-                
-                   
-                </div>
-                
-
-
-                       
-                    </div>
-
-                )
-            })}
+        <div className='row p-3'>
+      {
+bus.map((data,index)=>{
+    return(
+        <div className=' col-sm-6 col-md-6 col-lg-4 col-xl-4 vil' key={index}>
+           
+            <img src={data.image} />
+          <div className='text-center bg-primary-subtle'>
+          <b>  {data.Name}</b>
+          <p>  {data.distance}</p>
+          </div>
         </div>
-    </div>
+    )
+})
+        }
+      </div>
+
+        </div>
+
     <City/>
    
   </>
