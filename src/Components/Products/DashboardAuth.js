@@ -11,6 +11,7 @@ import AddProduct from './AddProduct'
 import ViewHotel from './ViewHotel'
 import OfferDelete from './OfferDelete'
 import ViewEnquiry from './ViewEnquiry'
+import Addmenu from './Addmenu'
 
 const DashboardAuth = () => { 
   const [token,setToken]=useContext(loginCheck)
@@ -18,32 +19,39 @@ const DashboardAuth = () => {
 const [view,setView]=useState();
 
   const Dashboardview=useMemo(()=>{
-    if (view===""){
-      return <Welcome/>}
+    if(view===" "){
+      return(Welcome)
+    }
+    else if (view==="addmenu"){
+      return <Addmenu/>}
   
-      if (view==="addoffer"){
+     else if (view==="addoffer"){
         return <Offer/>
       
     }
-    if (view==="viewOffer"){
+    else if (view==="viewOffer"){
       return <OfferDelete/>
     
   }
 
-    if (view==="addHotel"){
+    else if (view==="addHotel"){
       return <AddHotel/>
     }
-    if (view==="cart"){
+    else if (view==="cart"){
       return <AddProduct/>
     }
-    if (view==="wished items"){
+    else if (view==="wished items"){
       return <ViewHotel/>
     }
+    
 
-    if (view==="enquiry"){
+    else if (view==="enquiry"){
       return <ViewEnquiry/>
     }
-    
+
+    else {
+      return <Welcome/>
+    }
     
     
   },[view])
@@ -75,7 +83,7 @@ const [view,setView]=useState();
             <button onClick={()=>setView("addoffer")}>AddOffer</button>
             <button onClick={()=>setView("addHotel")}>AddHotel</button>
             <button onClick={()=>setView("viewOffer")}>viewOffer</button>
-            
+            <button onClick={()=>setView("addmenu")}>AddMenu</button>
             <button  onClick={()=>setView("enquiry")}>View Quiries</button>
             <button onClick={()=>setToken("")} className='text-light bg-danger' >Logout</button>
 

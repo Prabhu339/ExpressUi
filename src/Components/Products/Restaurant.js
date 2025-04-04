@@ -32,7 +32,7 @@ bus.map((data,index)=>{
     return(
         <div className=' col-sm-6 col-md-6 col-lg-4 col-xl-4 vil' key={index}>
            
-            <img src={data.image} />
+            <img src={data.image} onClick={item}/>
           <div className='text-center bg-primary-subtle'>
           <b>  {data.Name}</b>
           <p>  {data.distance}</p>

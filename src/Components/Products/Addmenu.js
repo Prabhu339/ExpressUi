@@ -52,7 +52,7 @@ const Addmenu = () => {
         className='mb-3 form-control w-75'
         onChange={(e)=>setprice(e.target.value)}
         />
-     <input type='submit' value='Addmenu' className='w-75'/>
+     <input type='submit' value='Addmenu' className='w-75 btn btn-dark'/>
      </form>
     </div>
   )
