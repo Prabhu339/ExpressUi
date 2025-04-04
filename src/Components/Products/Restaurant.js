@@ -22,7 +22,7 @@ const Restaurant = () => {
     })
   return (
   <>
-  
+  <Start/>
   <ViewHotel/>
   <div className='container'>
         <h1>View Restaurants</h1>

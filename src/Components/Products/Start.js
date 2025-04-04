@@ -1,31 +1,58 @@
 import React from 'react'
-import img from "../S/Sassets/biriyani.avif"
-import pic from "../S/Sassets/bonda.avif"
-import pic1 from "../S/Sassets/idli.avif"
-import pic2 from "../S/Sassets/dosa.avif"
-import img2 from "../S/Sassets/parata.avif"
-import pics from "../S/Sassets/poori.avif"
+
 
 
 
 const Start = () => {
-  return (
-    <div className=''>
-        <div className='container'>
-        <div><h3 className='bold'>what's on your mind</h3></div>
-        <div className='dataimg'>
-        <img src={img} alt="image" />
-        <img src={pic} alt="image" />
-        <img src={pics} alt="image" />
-        <img src={pic1} alt="image" />
-        <img src={pic2} alt="image" />
-     <img src={img2} alt="image" />
+  const pics=[
+    {
+      "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
+    },
+    {
+      "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png"
+    },
+    {
+      "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/58760e8e-324f-479e-88fa-31800120ea38_Rolls1.png"
+    },
+    {
+      "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png"
+    },
+    {
+      "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_cake.png"
+    },
+    {
+      "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Momos.png"
+    },
+    {
+    "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pav%20Bhaji.png"
+      },
+      {
+        "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png"
+      }
+]
 
-        </div>
+  
+  return (
+   
+    
+       <div className='row container'>
+        {
+            pics.map((dt,index)=>{
+                return(
+                  <div key={index} className='col-md-2 col-xl-2 col-sm-3 col-md-3'>
+                    <img src={dt.img} className='w-100'/>
+                  </div>
+                )
+            })
+        }
         
         </div>
-       
-    </div>
+        
+     
+        
+        
+      
+   
    
   )
 }
