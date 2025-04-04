@@ -35,12 +35,12 @@ const Start = () => {
   return (
    
     
-       <div className='row container'>
+       <div className='row container-fluid'>
         {
             pics.map((dt,index)=>{
                 return(
-                  <div key={index} className='col-md-2 col-xl-2 col-sm-3 col-md-3'>
-                    <img src={dt.img} className='w-100'/>
+                  <div key={index} className='col-md-6 col-xl-2 col-sm-4 '>
+                    <img src={dt.img} className='w-75'/>
                   </div>
                 )
             })
