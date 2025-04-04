@@ -1,9 +1,9 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 
 
 
 const Start = () => {
+  
   const pics=[
     {
       "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
@@ -29,28 +29,34 @@ const Start = () => {
       {
         "img":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png"
       }
-]
+    ]
+
+
+
+    
 
   
   return (
    
-    
+    <>
+     
        <div className='row container-fluid'>
+       
         {
             pics.map((dt,index)=>{
                 return(
-                  <div key={index} className='col-md-6 col-xl-2 col-sm-4 '>
-                    <img src={dt.img} className='w-75'/>
+                  <div key={index} className='col-sm-3 col-md-3 col-lg-2 col-xl-2'>
+                    <img src={dt.img} className='w-50'/>
                   </div>
                 )
             })
         }
-        
         </div>
+        
         
      
         
-        
+        </>
       
    
    
